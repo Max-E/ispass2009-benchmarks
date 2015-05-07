@@ -98,7 +98,7 @@ INTERMED_FILES := *.cpp*.i *.cpp*.ii *.cu.c *.cudafe*.* *.fatbin.c *.cubin *.has
 CUDAHOME=$(CUDA_INSTALL_PATH)
 
 NVOPENCC_VER:=$(shell $$CUDAHOME/open64/bin/nvopencc --version 2>&1 | awk '/GPGPU-Sim/ {printf("_nvopencc_CL%d", $$3);}')
-GPGPULINK = -L$(CUDAHOME)/lib64/ -lcudart -L$(NVIDIA_COMPUTE_SDK_LOCATION)/C/lib/ -lcutil_x86_64 -lm -lz -ldl -lGL -lstdc++ $(NEWLIBDIR) $(LIB) # /usr/lib64/libstdc++.so.6 
+GPGPULINK = -L$(CUDAHOME)/lib64/ -L$(CUDAHOME)/lib/ -lcudart -L$(NVIDIA_COMPUTE_SDK_LOCATION)/C/lib/ -lcutil -lm -lz -ldl -lGL -lstdc++ $(NEWLIBDIR) $(LIB) # /usr/lib64/libstdc++.so.6 
 .SUFFIXES :
 
 all : vanilla $(BINDIR)/$(BINSUBDIR)/WP compare_snaps
