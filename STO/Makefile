@@ -50,4 +50,4 @@ CCFILES		:= storeCPU.cpp md5_cpu.cpp sha1_cpu.cpp
 ################################################################################
 # Rules and targets
 
-include ../../common/common.mk
+include ../common/common.mk

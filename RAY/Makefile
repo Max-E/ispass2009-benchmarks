@@ -47,4 +47,4 @@ GPGPUSIM_ROOT   := ..
 # Rules and targets
 #LIB := 
 
-include ../../common/common.mk
+include ../common/common.mk

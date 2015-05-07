@@ -45,6 +45,6 @@ GPGPUSIM_ROOT  := ..
 ################################################################################
 # Rules and targets
 
-include ../../common/common.mk
+include ../common/common.mk
 
 

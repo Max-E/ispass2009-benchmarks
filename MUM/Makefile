@@ -48,4 +48,4 @@ CCFILES		:= \
 # Rules and targets
 
 GPGPUSIM_ROOT := ..
-include ../../common/common.mk
+include ../common/common.mk

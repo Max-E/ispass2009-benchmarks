@@ -50,4 +50,4 @@ CUFLAGS	:= $(CFLAGS)
 ###############################################################################
 # Rules and targets
 
-include ../../common/common.mk
+include ../common/common.mk

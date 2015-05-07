@@ -62,7 +62,7 @@ NEWCPP = $(OPENMPI_BINDIR)mpicxx
 ###############################################################################
 # Rules and targets
 
-include ../../common/common.mk
+include ../common/common.mk
 
 LINKLINE += $(MPILNKOPTS) -L$(PWD)/3rdParty/ParMetis-3.1/ -lparmetis -lmetis -lm 
 
